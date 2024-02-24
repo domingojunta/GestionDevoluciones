@@ -1,0 +1,113 @@
+﻿<Page x:Class="GestiónDevoluciones.Pages.ArchivoDevinginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestiónDevoluciones.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="1000"
+      Title="RequerimientoSolicitudInteresado">
+
+    <StackPanel>
+        <Label Content="RSL de archivo de un procedimiento iniciado a solicitud del interesado (DEVINGIN)" FontWeight="Bold" FontSize="14" />
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="RUE: (*) " />
+            <TextBox Name="txtRUE" Grid.Row="0" Grid.Column="1" 
+                     Text="" KeyDown="txtRUE_KeyDown"
+                     />
+            
+
+            <Label Grid.Row="2" Grid.Column="0" Content="Fecha de notificación requerimiento:" />
+            <DatePicker Grid.Row="2" Grid.Column="1"
+                        Name="datePickerFechaNotificacionRequerimiento" 
+                        Text="" KeyDown="datePickerFechaNotificacionRequerimiento_KeyDown"
+            />
+
+
+            
+
+            <CheckBox Name="checkRepresentante" Grid.Row="6" Grid.Column="0" Content="¿Representante?" Margin="5"
+                      Checked="checkRepresentante_Checked" Unchecked="checkRepresentante_Checked"/>
+
+            <Label Grid.Row="7" Grid.Column="0" Content="Nombre del Sujeto Pasivo:" />
+            <TextBox Name="txtNombreInteresado" Grid.Row="7" Grid.Column="1" 
+                Text="" IsEnabled="false" />
+
+            <!--<Label Grid.Row="8" Grid.Column="0" Content="Nombre del Representante:" />
+            <TextBox Name="txtNombreRepresentante" Grid.Row="8" Grid.Column="1" 
+                Text="" IsEnabled="False" />-->
+
+            <StackPanel Grid.Row="9" Grid.ColumnSpan="2" Margin="0,10,0,10">
+                <Separator></Separator>
+                <Label Content="A continuación debes seleccionar al menos un documento a requerir:" FontWeight="Bold" FontSize="14"></Label>
+            </StackPanel>
+            <CheckBox Name="checkDocumentacionAcreditativa" Grid.Row="10" Grid.ColumnSpan="2" 
+                      Content="¿Solicitar documentación acreditativa del derecho a la devolución?" Margin="5" IsChecked="false"
+                      Checked="checkCualquierOpcion_Checked" Unchecked="checkCualquierOpcion_Checked"/>
+
+            <CheckBox Name="checkDecretoFirmeza" Grid.Row="11" Grid.ColumnSpan="2" 
+          Content="¿Solicitar el Decreto de firmeza de la sentencia o REA?" Margin="5" IsChecked="false"
+                      Checked="checkCualquierOpcion_Checked" Unchecked="checkCualquierOpcion_Checked"/>
+
+            <CheckBox Name="checkCertificadoEmpadronamiento" Grid.Row="12" Grid.ColumnSpan="2" 
+          Content="¿Solicitar el certificado de empadronamiento del Sujeto Pasivo?" Margin="5" IsChecked="false"
+                      Checked="checkCualquierOpcion_Checked" Unchecked="checkCualquierOpcion_Checked"/>
+
+            <CheckBox Name="checkAcreditacionRepresentacion" Grid.Row="13" Grid.ColumnSpan="2" 
+          Content="¿Solicitar acreditación de la representación?" Margin="5" IsChecked="false"
+                      Checked="checkCualquierOpcion_Checked" Unchecked="checkCualquierOpcion_Checked"/>
+
+            <CheckBox   Name="checkCesionCredito" Grid.Row="14" Grid.ColumnSpan="2" 
+                        Content="¿Solicitar la Cesión de crédito?" Margin="5" IsChecked="false"
+                        Checked="checkCualquierOpcion_Checked" Unchecked="checkCualquierOpcion_Checked"/>
+
+            <CheckBox Name="checkCuentaCorriente" Grid.Row="15" Grid.ColumnSpan="2" 
+          Content="¿Solicitar que de de alta cuenta corriente en GIRO?" Margin="5" IsChecked="false"
+                      Checked="checkCualquierOpcion_Checked" Unchecked="checkCualquierOpcion_Checked"/>
+
+            <CheckBox Name="checkOtroRequerimiento" Grid.Row="16" Grid.Column="0" 
+          Content="¿Otro requisito?" Margin="5" IsChecked="false" 
+                      Checked="checkOtroRequerimiento_Checked"
+                      Unchecked="checkOtroRequerimiento_Checked"/>
+
+            <Label Grid.Row="17" Grid.Column="0" Content="Otros requisitos:" />
+            <TextBox Name="txtOtroRequerimientoTexto" Grid.Row="17" Grid.Column="1" 
+            Text="" Height="60" TextAlignment="Left" AcceptsReturn="True" IsEnabled="False"/>
+
+        </Grid>
+
+        <StackPanel Margin="15">
+            
+            <Button Name="btnGenerarTexto" Content="Generar la RSL de Archivo" IsEnabled="True"
+                    Padding="15" HorizontalAlignment="Center" FontSize="14" FontWeight="Bold" Foreground="#FF213C25" Background="#FF0090FF"
+                    Click="btnGenerarTexto_Click" />
+                
+        </StackPanel>
+    </StackPanel>
+    
+</Page>

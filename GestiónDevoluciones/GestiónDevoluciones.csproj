@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Archivo.png" />
+    <None Remove="Exit.png" />
+    <None Remove="FocusUser.png" />
+    <None Remove="FormInstance.png" />
+    <None Remove="Home.png" />
+    <None Remove="logo.ico" />
+    <None Remove="logo.jpg" />
+    <None Remove="Pages\SHARED\andalucia.jpg" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <Resource Include="Archivo.png" />
+    <Resource Include="Exit.png" />
+    <Resource Include="FocusUser.png" />
+    <Resource Include="FormInstance.png" />
+    <Resource Include="Home.png" />
+    <Resource Include="logo.ico" />
+    <Resource Include="logo.jpg" />
+    <Resource Include="Pages\SHARED\andalucia.jpg" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <Compile Update="Pages\DEVINEJE\DevinejeRSLCaducidadPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\DEVINGIN\ArchivoDevinginPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <Folder Include="Entities\COMPREAU\" />
+    <Folder Include="Pages\COMPREAU\" />
+    <Folder Include="TextosPredefinidos\COMPREAU\" />
+    <Folder Include="TextosPredefinidos\DEVINGIN\NOTRIBUTARIO\" />
+    <Folder Include="Tools\COMPREAU\" />
+  </ItemGroup>
+
+</Project>

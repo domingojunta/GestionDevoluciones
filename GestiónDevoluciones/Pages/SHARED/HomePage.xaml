@@ -1,0 +1,18 @@
+﻿<Page x:Class="GestiónDevoluciones.Pages.SHARED.HomePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestiónDevoluciones.Pages.SHARED"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="1000"
+      Title="Página de Inicio">
+
+    <StackPanel>
+        <Label Content="Programa para la creación de documentos de expedientes de devoluciones de ingresos." 
+           FontWeight="Bold" FontSize="20" Margin="20"/>
+        <Image Stretch="Fill" Source="/Pages/SHARED/andalucia.jpg"/>
+        <Label Content="Versión 0.1 (19/02/2023)       Licencia Libre GPL       Autor: Domingo José Orta Pacheco      email: domingojunta@gmail.com" FontWeight="Bold" FontSize="14" Margin="20"/>
+
+    </StackPanel>
+</Page>

@@ -1,0 +1,8 @@
+﻿De conformidad con lo regulado en el artículo 80 y siguientes del Reglamento de organización y funcionamiento de la Tesorería General de la Junta de Andalucía y de la gestión recaudatoria, aprobado por el Decreto 197/2021, de 20 de julio, en el supuesto que desee, que la devolución se efectúe en una cuenta corriente que no sea de titularidad del Obligado Tributario, deberá comunicar de forma fehaciente, la cesión de crédito a favor de un tercero (como apoderamiento apud acta, registro electrónico de apoderamiento, documento firmado mediante certificado electrónico por el sujeto pasivo o bien personándose en una oficia de asistencia en materia de registro y presentando escrito de cesión ante funcionario habilitado).
+
+La comunicación tendrá el siguiente contenido mínimo:
+a) Identificación inequívoca de la resolución o acto del que deriva el derecho de cobro.
+b) Nombre o denominación social y NIF de la persona cedente y de la cesionaria.
+c) Código IBAN de la cuenta corriente que esté dada de alta en el sistema GIRO, de la persona cesionaria para efectuar el pago.
+d) En la comunicación han de constar las firmas de la persona cedente y de la cesionaria.
+e) Importe cedido, que nunca podrá ser superior a la obligación que deba ser reconocida.
